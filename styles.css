@@ -1,0 +1,245 @@
+:root {
+  color-scheme: light;
+  --text: #222;
+  --muted: #666;
+  --link: #174f88;
+  --line: #d6d6d6;
+  --soft: #f3f3f3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+main {
+  width: min(820px, calc(100% - 40px));
+  margin: 54px auto;
+}
+
+header {
+  margin-bottom: 42px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 2.1rem;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+section {
+  margin: 38px 0;
+}
+
+h2 {
+  margin: 0 0 12px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+h3 {
+  margin: 24px 0 8px;
+  font-size: 1rem;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: #0b3159;
+}
+
+.introduction {
+  display: grid;
+  grid-template-columns: 165px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.portrait {
+  width: 165px;
+  height: 205px;
+  border: 1px solid var(--line);
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+
+.introduction h2 {
+  margin-top: -7px;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 3px 12px;
+  margin: 0;
+}
+
+dt {
+  color: var(--muted);
+}
+
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 8px 0 0;
+  padding-left: 26px;
+}
+
+li {
+  margin-bottom: 9px;
+  padding-left: 4px;
+}
+
+.papers li {
+  margin-bottom: 14px;
+}
+
+.paper-title {
+  font-weight: bold;
+}
+
+.book-chapter {
+  margin-left: 4px;
+}
+
+.schedule {
+  width: 100%;
+  margin-top: 14px;
+  border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.schedule th {
+  width: 210px;
+  background: var(--soft);
+  font-weight: normal;
+}
+
+.registration-link {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid var(--link);
+  text-decoration: none;
+}
+
+.registration-link:hover {
+  color: #fff;
+  background: var(--link);
+}
+
+.registration-button {
+  display: inline-block;
+  padding: 8px 13px;
+  color: var(--muted);
+  background: var(--soft);
+  border: 1px solid var(--line);
+}
+
+.section-intro {
+  margin-bottom: 16px;
+}
+
+#gist-grid {
+  border-top: 1px solid var(--line);
+}
+
+.gist-card {
+  display: block;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.gist-card:hover h3 {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+.gist-card-meta {
+  color: var(--muted);
+  font: 0.75rem Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.gist-card h3 {
+  margin: 3px 0 0;
+  font-size: 1rem;
+}
+
+.gist-card-link {
+  display: none;
+}
+
+.gist-status {
+  padding: 13px 0;
+  color: var(--muted);
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 560px) {
+  main {
+    width: calc(100% - 30px);
+    margin: 30px auto;
+  }
+
+  .introduction {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait {
+    width: 140px;
+    height: 175px;
+  }
+
+  .introduction h2 {
+    margin-top: 0;
+  }
+
+  dl {
+    grid-template-columns: 80px 1fr;
+  }
+}
