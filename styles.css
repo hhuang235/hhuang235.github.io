@@ -171,6 +171,397 @@ li {
   border: 1px solid var(--line);
 }
 
+/* Conference page */
+
+.conference-page {
+  --maroon: #500000;
+  --maroon-dark: #2f0000;
+  --warm-paper: #f7f4ed;
+  --warm-line: #d9d2c4;
+  background: var(--warm-paper);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #282421;
+}
+
+.conference-header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.brand-bar {
+  min-height: 76px;
+  padding: 12px max(24px, calc((100vw - 1040px) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: var(--maroon-dark);
+}
+
+.brand-bar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-bar img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.math-brand {
+  gap: 14px;
+  padding: 7px 10px;
+  color: #fff;
+  background: #fff;
+}
+
+.math-brand span {
+  padding-right: 6px;
+  color: var(--maroon);
+  font: 12px/1.2 Arial, sans-serif;
+}
+
+.conference-hero {
+  padding: 86px max(24px, calc((100vw - 1040px) / 2)) 78px;
+  color: #fff;
+  background: var(--maroon);
+}
+
+.conference-kicker {
+  margin: 0 0 18px;
+  color: #d9c7bd;
+  font: bold 11px/1 Arial, sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.conference-hero h1 {
+  margin: 0;
+  max-width: 700px;
+  color: #fff;
+  font: normal clamp(58px, 8vw, 94px)/0.9 Georgia, serif;
+  letter-spacing: -0.045em;
+}
+
+.conference-meta {
+  margin-top: 42px;
+  display: flex;
+  gap: 24px 60px;
+  flex-wrap: wrap;
+  color: #eadfd8;
+}
+
+.conference-meta p {
+  margin: 0;
+}
+
+.conference-meta strong {
+  color: #fff;
+}
+
+.conference-nav {
+  padding: 0 max(24px, calc((100vw - 1040px) / 2));
+  display: flex;
+  gap: 4px 34px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--warm-line);
+  background: #fff;
+}
+
+.conference-nav a {
+  padding: 17px 0 14px;
+  color: #4a4541;
+  border-bottom: 3px solid transparent;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.conference-nav a:hover {
+  color: var(--maroon);
+  border-bottom-color: var(--maroon);
+}
+
+.conference-main {
+  width: min(1040px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.conference-section {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 36px;
+  padding: 78px 0;
+  margin: 0;
+  border-bottom: 1px solid var(--warm-line);
+}
+
+.conference-section > div {
+  max-width: 820px;
+}
+
+.section-number {
+  margin: 7px 0 0;
+  color: #8a8178;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.conference-section h2 {
+  margin: 0 0 28px;
+  padding: 0;
+  border: 0;
+  color: var(--maroon);
+  font: normal 38px/1.1 Georgia, serif;
+}
+
+.conference-section .lead {
+  max-width: 790px;
+  font: 23px/1.45 Georgia, serif;
+}
+
+.conference-section p {
+  max-width: 760px;
+}
+
+.format-note {
+  margin-top: 34px;
+  padding: 22px 24px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 22px;
+  border-left: 3px solid var(--maroon);
+  background: #fff;
+}
+
+.format-note strong {
+  color: var(--maroon);
+}
+
+.format-note p {
+  margin: 0;
+}
+
+.speaker-list {
+  border-top: 1px solid var(--warm-line);
+}
+
+.speaker-list a {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) 1fr 24px;
+  gap: 24px;
+  align-items: center;
+  padding: 20px 4px;
+  color: inherit;
+  border-bottom: 1px solid var(--warm-line);
+  text-decoration: none;
+}
+
+.speaker-list a:hover {
+  color: var(--maroon);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.speaker-name {
+  font: 21px/1.2 Georgia, serif;
+}
+
+.speaker-school {
+  color: #706a64;
+  font-size: 14px;
+}
+
+.speaker-arrow {
+  transition: transform 160ms ease;
+}
+
+.speaker-list a:hover .speaker-arrow {
+  transform: translate(2px, -2px);
+}
+
+.section-note {
+  color: #6c665f;
+}
+
+.day-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.day-grid article {
+  min-height: 185px;
+  padding: 25px;
+  border: 1px solid var(--warm-line);
+  background: #fff;
+}
+
+.day-grid .day-date {
+  color: var(--maroon);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.day-grid h3 {
+  margin: 30px 0 8px;
+  color: #302b28;
+  font: normal 26px/1.1 Georgia, serif;
+}
+
+.day-grid article > p:last-child {
+  margin: 0;
+  color: #706a64;
+  font-size: 14px;
+}
+
+.registration-panel > div {
+  padding: 32px;
+  color: #fff;
+  background: var(--maroon);
+}
+
+.registration-panel h2,
+.registration-panel .lead {
+  color: #fff;
+}
+
+.registration-panel .lead {
+  font-size: 20px;
+}
+
+.conference-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 16px;
+  color: var(--maroon);
+  background: #fff;
+  border: 1px solid #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.conference-button:hover {
+  color: #fff;
+  background: transparent;
+}
+
+.registration-panel .text-link {
+  display: inline-block;
+  margin-left: 18px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.organizer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--warm-line);
+}
+
+.organizer-list li {
+  margin: 0;
+  padding: 14px 2px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  border-bottom: 1px solid var(--warm-line);
+}
+
+.organizer-list span {
+  font: 18px/1.3 Georgia, serif;
+}
+
+.organizer-list small {
+  color: #706a64;
+}
+
+.conference-footer {
+  min-height: 160px;
+  padding: 48px max(24px, calc((100vw - 1040px) / 2));
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  color: #d9c7bd;
+  background: var(--maroon-dark);
+}
+
+.conference-footer p {
+  margin: 3px 0;
+}
+
+.conference-footer p:first-child {
+  color: #fff;
+  font: 21px/1.2 Georgia, serif;
+}
+
+.conference-footer a {
+  color: #fff;
+}
+
+@media (max-width: 680px) {
+  .brand-bar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .conference-hero {
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
+  .conference-nav {
+    gap: 0 22px;
+  }
+
+  .conference-main {
+    width: calc(100% - 30px);
+  }
+
+  .conference-section {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 55px 0;
+  }
+
+  .format-note,
+  .speaker-list a,
+  .day-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .speaker-list a {
+    gap: 5px;
+  }
+
+  .speaker-arrow {
+    display: none;
+  }
+
+  .registration-panel > div {
+    padding: 24px;
+  }
+
+  .registration-panel .text-link {
+    display: block;
+    margin: 18px 0 0;
+  }
+
+  .organizer-list li,
+  .conference-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 .section-intro {
   margin-bottom: 16px;
 }
