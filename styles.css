@@ -151,34 +151,80 @@ footer {
 
 /* Restrained conference treatment */
 
-.conference-page { background: #faf9f6; }
+.conference-page { background: #eadfce; }
+
+.conference-masthead {
+  min-height: 112px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: center;
+  border-bottom: 2px solid var(--maroon);
+}
 
 .conference-logos {
-  min-height: 62px;
-  margin-bottom: 24px;
-  padding: 10px 13px;
+  padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  background: var(--maroon);
+  gap: 10px;
 }
 
 .conference-logos a { display: block; line-height: 0; }
 .conference-logos img { max-width: 100%; height: auto; }
 
-.conference-logos a:last-child {
-  padding: 4px 8px;
+.conference-logos .school-mark {
+  width: 92px;
+  height: 92px;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--maroon);
+}
+
+.conference-logos .school-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.conference-logos .department-mark {
+  width: 238px;
+  padding: 0;
+  border: 1px solid #c9b7b7;
   background: #fff;
+}
+
+.conference-logos .department-university {
+  min-height: 30px;
+  padding: 3px 8px 1px;
+  display: flex;
+  align-items: center;
+  background: var(--maroon);
+}
+
+.conference-logos .department-university img {
+  width: 145px;
+}
+
+.conference-logos .department-mark > img {
+  width: 218px;
+  margin: 5px 9px;
 }
 
 .conference-title {
   margin-bottom: 0;
-  padding: 22px 0 19px;
-  border-bottom: 2px solid var(--maroon);
+  padding: 20px 0 16px;
+  border: 0;
 }
 
-.conference-title h1 { color: var(--maroon); font-size: 2.45rem; }
+.conference-title h1 {
+  color: var(--maroon);
+  font-size: 2.45rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
 .conference-title p { margin: 4px 0 0; color: var(--muted); }
 
 .conference-nav {
@@ -219,7 +265,8 @@ footer {
   .portrait { width: 140px; height: 175px; }
   .introduction h2 { margin-top: 0; }
   dl { grid-template-columns: 80px 1fr; }
-  .conference-logos { align-items: flex-start; flex-direction: column; }
+  .conference-masthead { grid-template-columns: 1fr; gap: 4px; padding-bottom: 14px; }
+  .conference-logos { align-items: center; }
   .conference-title h1 { font-size: 2rem; }
   .people-list li { grid-template-columns: 1fr; gap: 1px; }
   .schedule th { width: 45%; }
